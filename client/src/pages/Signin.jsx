@@ -36,7 +36,7 @@ export default function SignIn() {
      
       if(res.ok){
         dispatch(signInSuccess(data));
-        navigate('/sinin');
+        navigate('/dashboard?tab=dash');
       }
     } catch (error) {
       dispatch(signInFailure(data.message));
